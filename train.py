@@ -1,11 +1,7 @@
-import os
 import numpy as np
 import argparse
-import time
-import librosa
 from utils import *
 from WORLD_utils import *
-from model import CycleGAN
 from train_function import train
 
 
