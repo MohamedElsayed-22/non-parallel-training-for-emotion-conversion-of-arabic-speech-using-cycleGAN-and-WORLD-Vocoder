@@ -1,6 +1,5 @@
 import tensorflow as tf
 import os
-import random
 import numpy as np
 import librosa
 from WORLD_utils import *
@@ -83,8 +82,8 @@ def logf0_statistics(f0s):
 def pitch_conversion(f0, mean_log_src, std_log_src, mean_log_target, std_log_target):
     # Logarithm Gaussian normalization for Pitch Conversions
     try:
-        f0_converted = np.exp((np.log(f0.clip(min = minval)) - mean_log_src) / std_log_src * std_log_target + mean_log_target)
-    # f0_converted = np.exp((np.log(f0) - mean_log_src) / std_log_src * std_log_target + mean_log_target)
+        # f0_converted = np.exp((np.log(f0.clip(min = minval)) - mean_log_src) / std_log_src * std_log_target + mean_log_target)
+        f0_converted = np.exp((np.log(f0) - mean_log_src) / std_log_src * std_log_target + mean_log_target)
     except:
         return f0
     return f0_converted
