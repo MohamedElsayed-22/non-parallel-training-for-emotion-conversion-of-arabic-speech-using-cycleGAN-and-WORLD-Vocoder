@@ -6,7 +6,7 @@ This project implements a CycleGAN-based voice conversion pipeline that converts
 
 # 🔀 Model Concept: Content–Style Disentanglement
 
-![General Idea](visuals\non-parallel-training.png)
+![General Idea](visuals/non-parallel-training.png)
 
 This figure illustrates the core idea of the proposed method: **disentangling content and style** from an input signal and recombining them to generate emotion-transferred outputs.
 
@@ -28,7 +28,7 @@ This cross-combination mechanism enables **emotion transfer** while preserving t
 
 # 🧩 Network Architecture
 
-![Network Structure](visuals\network-structure.png)
+![Network Structure](visuals/network-structure.png)
 
 This figure **(from our published paper)** illustrates the overall architecture used in our system. The model is composed of four main components:
 
